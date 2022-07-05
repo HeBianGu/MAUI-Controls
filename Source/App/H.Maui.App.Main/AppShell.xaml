@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell x:Class="H.Maui.App.Main.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:H.Maui.App.Main"
+       Shell.FlyoutBehavior="Flyout">
+    <Shell.Resources>
+        <Style TargetType="ShellContent">
+            <Setter Property="Title" Value="{Binding Source={RelativeSource AncestorType={x:Type BaseShellItem}}, Path=Title}" />
+            <Setter Property="FlyoutIcon" Value="{StaticResource IconTwo}" />
+            <Setter Property="Icon" Value="{StaticResource IconTwo}" />
+        </Style>
+        <Style TargetType="FlyoutItem">
+            <Setter Property="FlyoutIcon" Value="{StaticResource IconOne}" />
+        </Style>
+        <Style TargetType="Tab">
+            <Setter Property="Icon" Value="{StaticResource IconThree}" />
+        </Style>
+    </Shell.Resources>
+
+    <FlyoutItem Title="Button">
+        <ShellContent Title="Button" Route="OnePage">
+            <ContentPage>
+                <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="CheckBox">
+        <ShellContent Title="CheckBox" Route="OnePage">
+            <ContentPage>
+                <CheckBox />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="DatePicker">
+        <ShellContent Title="DatePicker" Route="OnePage">
+            <ContentPage>
+                <DatePicker />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Editor">
+        <ShellContent Title="Editor" Route="OnePage">
+            <ContentPage>
+                <Editor />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Entry">
+        <ShellContent Title="Entry" Route="OnePage">
+            <ContentPage>
+                <Entry />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Image">
+        <ShellContent Title="Image" Route="OnePage">
+            <ContentPage>
+                <Image />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ImageButton">
+        <ShellContent Title="ImageButton" Route="OnePage">
+            <ContentPage>
+                <ImageButton />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Border">
+        <ShellContent Title="Border" Route="OnePage">
+            <ContentPage>
+                <Border />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Label">
+        <ShellContent Title="Label" Route="OnePage">
+            <ContentPage>
+                <Label />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ProgressBar">
+        <ShellContent Title="ProgressBar" Route="OnePage">
+            <ContentPage>
+                <ProgressBar />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="RadioButton">
+        <ShellContent Title="RadioButton" Route="OnePage">
+            <ContentPage>
+                <RadioButton />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ScrollView">
+        <ShellContent Title="ScrollView" Route="OnePage">
+            <ContentPage>
+                <ScrollView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Slider">
+        <ShellContent Title="Slider" Route="OnePage">
+            <ContentPage>
+                <Slider />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Switch">
+        <ShellContent Title="Switch" Route="OnePage">
+            <ContentPage>
+                <Switch />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Frame">
+        <ShellContent Title="Frame" Route="OnePage">
+            <ContentPage>
+                <Frame />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="TableView">
+        <ShellContent Title="TableView" Route="OnePage">
+            <ContentPage>
+                <TableView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ListView">
+        <ShellContent Title="ListView" Route="OnePage">
+            <ContentPage>
+                <ListView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Path">
+        <ShellContent Title="Path" Route="OnePage">
+            <ContentPage>
+                <Path />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ActivityIndicator">
+        <ShellContent Title="ActivityIndicator" Route="OnePage">
+            <ContentPage>
+                <ActivityIndicator />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="BlazorWebView">
+        <ShellContent Title="BlazorWebView" Route="OnePage">
+            <ContentPage>
+                <!--<BlazorWebView />-->
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="BoxView">
+        <ShellContent Title="BoxView" Route="OnePage">
+            <ContentPage>
+                <BoxView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="CarouselView">
+        <ShellContent Title="CarouselView" Route="OnePage">
+            <ContentPage>
+                <CarouselView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="CollectionView">
+        <ShellContent Title="CollectionView" Route="OnePage">
+            <ContentPage>
+                <CollectionView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ContentView">
+        <ShellContent Title="ContentView" Route="OnePage">
+            <ContentPage>
+                <ContentView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ellipse">
+        <ShellContent Title="Ellipse" Route="OnePage">
+            <ContentPage>
+                <Ellipse />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="GraphicsView">
+        <ShellContent Title="GraphicsView" Route="OnePage">
+            <ContentPage>
+                <GraphicsView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="IndicatorView">
+        <ShellContent Title="IndicatorView" Route="OnePage">
+            <ContentPage>
+                <IndicatorView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Line">
+        <ShellContent Title="Line" Route="OnePage">
+            <ContentPage>
+                <Line />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Picker">
+        <ShellContent Title="Picker" Route="OnePage">
+            <ContentPage>
+                <Picker />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Polygon">
+        <ShellContent Title="Polygon" Route="OnePage">
+            <ContentPage>
+                <Polygon />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Polyline">
+        <ShellContent Title="Polyline" Route="OnePage">
+            <ContentPage>
+                <Polyline />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Rectangle">
+        <ShellContent Title="Rectangle" Route="OnePage">
+            <ContentPage>
+                <Rectangle />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="RefreshView">
+        <ShellContent Title="RefreshView" Route="OnePage">
+            <ContentPage>
+                <RefreshView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="RoundRectangle">
+        <ShellContent Title="RoundRectangle" Route="OnePage">
+            <ContentPage>
+                <RoundRectangle />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="SearchBar">
+        <ShellContent Title="SearchBar" Route="OnePage">
+            <ContentPage>
+                <SearchBar />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Stepper">
+        <ShellContent Title="Stepper" Route="OnePage">
+            <ContentPage>
+                <Stepper />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="SwipeView">
+        <ShellContent Title="SwipeView" Route="OnePage">
+            <ContentPage>
+                <SwipeView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="TimePicker">
+        <ShellContent Title="TimePicker" Route="OnePage">
+            <ContentPage>
+                <TimePicker />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="WebView">
+        <ShellContent Title="WebView" Route="OnePage">
+            <ContentPage>
+                <WebView />
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Pages">
+        <Tab Title="ContentPage">
+            <ShellContent>
+                <ContentPage />
+            </ShellContent>
+        </Tab>
+        <Tab Title="FlyoutPage">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="NavigationPage">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="TabbedPage">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Layouts">
+        <Tab Title="AbsoluteLayout">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="BindableLayout">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="FlexLayout">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Grid">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="HorizontalStackLayout">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="StackLayout">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="VerticalStackLayout">
+            <ShellContent>
+                <ContentPage>
+                    <Button HeightRequest="40" Text="12424" WidthRequest="200" />
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+</Shell>
